@@ -1,0 +1,294 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-27 17:10+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\target\settings.py:131
+msgid "Русский"
+msgstr ""
+
+#: .\target\settings.py:132
+msgid "English"
+msgstr ""
+
+#: .\templates\index.html:33 .\templates\index.html:410
+msgid "Главная"
+msgstr "Главная"
+
+#: .\templates\index.html:34 .\templates\index.html:411
+msgid "О школе"
+msgstr "О школе"
+
+#: .\templates\index.html:35 .\templates\index.html:412
+msgid "Отзывы"
+msgstr ""
+
+#: .\templates\index.html:36 .\templates\index.html:413
+#: .\templates\index.html:431
+msgid "Контакты"
+msgstr ""
+
+#: .\templates\index.html:80
+msgid "Target International School – школа будущих лидеров в бизнесе и IT"
+msgstr ""
+
+#: .\templates\index.html:81
+msgid ""
+"\n"
+"                          Международное образование с акцентом на английский "
+"язык, предпринимательство и современные технологии.\n"
+"                          "
+msgstr ""
+
+#: .\templates\index.html:85 .\templates\index.html:179
+msgid "Получить консультацию"
+msgstr ""
+
+#: .\templates\index.html:100
+msgid "лет работы"
+msgstr ""
+
+#: .\templates\index.html:104
+msgid "учеников"
+msgstr ""
+
+#: .\templates\index.html:108
+msgid "поступают в вузы за рубежом"
+msgstr ""
+
+#: .\templates\index.html:112
+msgid "филиала"
+msgstr ""
+
+#: .\templates\index.html:123
+msgid "Почему выбирают"
+msgstr ""
+
+#: .\templates\index.html:128
+msgid "Международная программа обучения"
+msgstr ""
+
+#: .\templates\index.html:129
+msgid "Интеграция лучших мировых образовательных стандартов."
+msgstr ""
+
+#: .\templates\index.html:134
+msgid "Углублённое изучение английского языка"
+msgstr ""
+
+#: .\templates\index.html:135
+msgid "Подготовка к IELTS и SAT и другим международным экзаменам."
+msgstr ""
+
+#: .\templates\index.html:139
+msgid "Поддержка при поступлении в университеты"
+msgstr ""
+
+#: .\templates\index.html:140
+msgid "Консультации и помощь в выборе вуза и подготовки документов."
+msgstr ""
+
+#: .\templates\index.html:145
+msgid "Индивидуальный подход"
+msgstr ""
+
+#: .\templates\index.html:146
+msgid "Малые классы и персонализированные планы обучения."
+msgstr ""
+
+#: .\templates\index.html:150
+msgid "Современная инфраструктура"
+msgstr ""
+
+#: .\templates\index.html:151
+msgid "Оснащённые классы, лаборатории и зоны для отдыха."
+msgstr ""
+
+#: .\templates\index.html:155
+msgid "Уроки по бизнесу и IT"
+msgstr ""
+
+#: .\templates\index.html:156
+msgid "Развитие предпринимательских навыков и цифровой грамотности."
+msgstr ""
+
+#: .\templates\index.html:199
+msgid "Начальная школа"
+msgstr ""
+
+#: .\templates\index.html:200
+msgid "(1-4 классы)"
+msgstr ""
+
+#: .\templates\index.html:202
+msgid "Формирование базовых навыков и интереса к обучению."
+msgstr ""
+
+#: .\templates\index.html:212
+msgid "Средняя школа"
+msgstr ""
+
+#: .\templates\index.html:213
+msgid "(5-8 классы)"
+msgstr ""
+
+#: .\templates\index.html:225
+msgid "Старшая школа"
+msgstr ""
+
+#: .\templates\index.html:226
+msgid "(9-11 классы)"
+msgstr ""
+
+#: .\templates\index.html:228
+msgid "Подготовка к выпускным экзаменам и поступлению в вузы."
+msgstr ""
+
+#: .\templates\index.html:241
+msgid "Что говорят наши ученики и родители"
+msgstr ""
+
+#: .\templates\index.html:269
+msgid "Оставить отзыв"
+msgstr ""
+
+#: .\templates\index.html:280
+msgid "Оценка:"
+msgstr ""
+
+#: .\templates\index.html:285
+msgid "Отправить"
+msgstr ""
+
+#: .\templates\index.html:297
+msgid ""
+"\n"
+"          Международный экзамен по математике, чтению и письму,\n"
+"           используемый при поступлении в университеты США.\n"
+"          "
+msgstr ""
+
+#: .\templates\index.html:303
+msgid ""
+"\n"
+"          Подготовка к SAT формирует критическое мышление, аналитические "
+"навыки и уверенное\n"
+"           владение английским языком в академическом контексте.\n"
+"          "
+msgstr ""
+
+#: .\templates\index.html:319
+msgid ""
+"Международная система оценки владения английским для учёбы, работы и миграции"
+msgstr ""
+
+#: .\templates\index.html:320
+msgid "Признаётся более чем 11 500 организациями в 140 странах"
+msgstr ""
+
+#: .\templates\index.html:321
+msgid ""
+"\n"
+"          Оценивает четыре навыка: Listening, Reading, Writing и Speaking — "
+"актуально для поступления в\n"
+"           англоязычные университеты.\n"
+"          "
+msgstr ""
+
+#: .\templates\index.html:330
+msgid "Результаты целевой подготовки"
+msgstr ""
+
+#: .\templates\index.html:331
+msgid "Средний SAT Score наших студентов превышает 1400."
+msgstr ""
+
+#: .\templates\index.html:332
+msgid ""
+"IELTS—баллы от 7.0 и выше, что соответствует уровню C1 (продвинутый "
+"пользователь)."
+msgstr ""
+
+#: .\templates\index.html:333
+msgid ""
+"Более 50 000 студентов по всей стране успешно сдают IELTS в 2024г. — рост в "
+"5 раз по сравнению с 2020 г."
+msgstr ""
+
+#: .\templates\index.html:342
+msgid "Ответы на популярные вопросы"
+msgstr ""
+
+#: .\templates\index.html:345
+msgid "Какие языки преподаются?"
+msgstr ""
+
+#: .\templates\index.html:347
+msgid "Английский, узбекский, русский, китайский"
+msgstr ""
+
+#: .\templates\index.html:352
+msgid "Есть ли подготовка к международным экзаменам?"
+msgstr ""
+
+#: .\templates\index.html:354
+msgid "Да, школа Target готовит к SAT и IELTS с высокими результатами."
+msgstr ""
+
+#: .\templates\index.html:359
+msgid "Как записаться на экскурсию?"
+msgstr ""
+
+#: .\templates\index.html:362
+msgid "кликните здесь, чтобы оставить заявку на экскурсию"
+msgstr ""
+
+#: .\templates\index.html:371
+msgid "Остались вопросы?"
+msgstr ""
+
+#: .\templates\index.html:372
+msgid ""
+"Оставьте свой номер телефона и мы ответим на все интересующие вас вопросы"
+msgstr ""
+
+#: .\templates\index.html:376
+msgid "Ваше Ф.И.О"
+msgstr ""
+
+#: .\templates\index.html:378
+msgid "Записаться на консультацию"
+msgstr ""
+
+#: .\templates\index.html:379
+msgid "Отправлено! Мы скоро свяжемся с вами."
+msgstr ""
+
+#: .\templates\index.html:397
+msgid "школа будущих лидеров в бизнесе и IT"
+msgstr ""
+
+#: .\templates\index.html:408
+msgid "Разделы"
+msgstr ""
+
+#: .\templates\index.html:419
+msgid "Адреса"
+msgstr ""

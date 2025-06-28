@@ -1,0 +1,531 @@
+  {% load i18n %}
+  {% load static %}
+  <!DOCTYPE html>
+  <html lang="ru">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Target International School</title>
+  
+        <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+      integrity="sha512-yH3vGvPBK6Z9t9+WwexjhtmvnHtGvX+gN0+z8CXuM7Zl9+L+vV2vBQNdTW6H1IfMbI3R7tF5XK+TAl3ZhvU2AQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+      <link rel="stylesheet" href="{% static 'style.css' %}">
+    
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+ 
+  </head>
+  <body>
+
+
+
+
+      <header class="header">
+          <div class="container">
+              <div class="header-inner">
+                  <a href="{% url 'home' %}" class="logo">
+                      <img src="{% static './img/Frame 2.png' %}" alt="Target International School Logo">
+                  </a>
+                  <nav class="nav" id="main-nav">
+                      <a href="{% url 'home' %}" class="nav-link">{% trans "Главная" %}</a>
+                      <a href="#why-choose" class="nav-link">{% trans "О школе" %}</a>
+                      <a href="#testimonials" class="nav-link">{% trans "Отзывы" %}</a>
+                      <a href="#contact-section" class="nav-link">{% trans "Контакты" %}</a>
+                      
+
+                  </nav>
+                    <!-- Переключатель языков -->
+  <form action="{% url 'set_language' %}" method="post">
+    {% csrf_token %}
+    {# Этот инпут говорит Django, куда редиректить после смены языка #}
+    <input name="next" type="hidden" value="{{ request.get_full_path }}" />
+
+    <select class="Переключатель" name="language" onchange="this.form.submit()">
+      {% get_current_language as CURRENT_LANGUAGE %}
+      {% get_available_languages as LANGUAGES %}
+      {% for code, name in LANGUAGES %}
+        <option value="{{ code }}"{% if code == CURRENT_LANGUAGE %} selected{% endif %}>
+          {{ name }}
+        </option>
+      {% endfor %}
+    </select>
+  </form>
+                  <div class="header-actions">
+                    <a href="{% url 'register' %}" class="btn btn-outline-danger">Sign Up</a>
+                    
+                          
+                          <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M1.41 0.589966L6 5.17997L10.59 0.589966L12 2.00997L6 8.00997L0 2.00997L1.41 0.589966Z" fill="white"/>
+                          </svg>
+                    
+                      <a href="tel:+998712000737" class="phone-button">71 200 07 37</a>
+                  </div>
+                  <button class="burger-menu" id="burger-menu" aria-label="Открыть меню">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                  </button>
+              </div>
+          </div>
+      </header>
+
+      <main class="main">
+          <div class="hero">
+              <div class="container">
+                  <div class="hero-inner">
+                      <div class="hero-content">
+                          <h1 class="hero-title">{% trans "Target International School – школа будущих лидеров в бизнесе и IT" %}</h1>
+                          <p class="hero-subtitle">
+                            {% blocktrans trimmed %}
+                            Международное образование с акцентом на английский язык, предпринимательство и современные технологии.
+                            {% endblocktrans %}
+                          </p>
+                          <button class="cta-button">{% trans "Получить консультацию" %}</button>
+                      </div>
+                      <div class="hero-image">
+                          <img class="img" src="{% static './img/b70ae843-2f84-48f5-a351-6de483b1c25b-removebg-preview.png' %}" alt="">
+                          
+                      </div>
+                      </div>
+              </div>
+          </div>
+          
+          <section class="stats">
+              <div class="container">
+                  <div class="stats-inner">
+                      <div class="stat-item">
+                          <span class="stat-number">4+</span>
+                          <span class="stat-label">{% trans "лет работы" %}</span>
+                      </div>
+                      <div class="stat-item">
+                          <span class="stat-number">1200+</span>
+                          <span class="stat-label">{% trans "учеников" %}</span>
+                      </div>
+                      <div class="stat-item">
+                          <span class="stat-number">85%</span>
+                          <span class="stat-label">{% trans "поступают в вузы за рубежом" %}</span>
+                      </div>
+                      <div class="stat-item">
+                          <span class="stat-number">4</span>
+                          <span class="stat-label">{% trans "филиала" %}</span>
+                      </div>
+                  </div>
+              </div>
+          </section>
+      </main>
+
+
+      <section class="why-choose" id="why-choose">
+          <div class="container1">
+              <div class="section-title">
+                  <h2>{% trans "Почему выбирают" %}<br><span class="highlight">Target International School</span></h2>
+              </div>
+              
+              <div class="features-grid">
+                  <div class="feature-card primary">
+                      <h3 class="feature-title">{% trans "Международная программа обучения" %}</h3>
+                      <p class="feature-description">{% trans "Интеграция лучших мировых образовательных стандартов." %}</p>
+                    
+                  </div>
+                  
+                  <div class="feature-card">
+                      <h3 class="feature-title">{% trans "Углублённое изучение английского языка" %}</h3>
+                      <p class="feature-description">{% trans "Подготовка к IELTS и SAT и другим международным экзаменам." %}</p>
+                  </div>
+                  
+                  <div class="feature-card">
+                      <h3 class="feature-title">{% trans "Поддержка при поступлении в университеты" %}</h3>
+                      <p class="feature-description">{% trans "Консультации и помощь в выборе вуза и подготовки документов." %}</p>
+                  </div>
+                  
+                  <div class="feature-card">
+                    
+                      <h3 class="feature-title">{% trans "Индивидуальный подход" %}</h3>
+                      <p class="feature-description">{% trans "Малые классы и персонализированные планы обучения." %}</p>
+                  </div>
+                  
+                  <div class="feature-card">
+                      <h3 class="feature-title">{% trans "Современная инфраструктура" %}</h3>
+                      <p class="feature-description">{% trans "Оснащённые классы, лаборатории и зоны для отдыха." %}</p>
+                  </div>
+                  
+                  <div class="feature-card business">
+                      <h3 class="feature-title">{% trans "Уроки по бизнесу и IT" %}</h3>
+                      <p class="feature-description">{% trans "Развитие предпринимательских навыков и цифровой грамотности." %}</p>
+                  </div>
+                  
+              </div>
+          </div>
+      </section>
+  <hr>
+
+        <section class="education-section">
+          <div class="container3">
+          <h2 class="section-title">
+    {% blocktrans trimmed %}
+      Образование, которое открывает двери<br>
+      в международное будущее
+    {% endblocktrans %}
+  </h2>
+              <p class="section-description">
+                {% blocktrans %} С 2015 года Target International School предоставляет качественное образование, 
+                  сочетая академические знания с практическими навыками в области бизнеса и 
+                  информационных технологий. Наши выпускники успешно поступают в ведущие 
+                  университеты и строят карьеру в международных компаниях.  {% endblocktrans %}
+              </p>
+              <a href="#contact-section">
+              <button class="cta-button">
+                  {% trans "Получить консультацию" %}
+              </button>
+              </a>
+          </div>
+      </section>
+
+
+
+      <section class="programs-section">
+          <div class="container4">
+              <h2 class="section-title">
+                  {% blocktrans %}Программы обучения<br>
+                  для всех возрастов  {% endblocktrans %}
+              </h2>
+              
+              <div class="programs-grid">
+                  <div class="program-card">
+                      <div class="program-image elementary">
+                          <div><img src="{% static 'img/Frame 2.png' %}" alt=""></div>
+                      </div>
+                      <div class="program-content">
+                          <h3 class="program-title">{% trans "Начальная школа" %}</h3>
+                          <p class="program-grade">{% trans "(1-4 классы)" %}</p>
+                          <p class="program-description">
+                              {% trans "Формирование базовых навыков и интереса к обучению." %}
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="program-card">
+                      <div class="program-image middle">
+                        <div><img src="{% static 'img/Frame 2.png' %}" alt=""></div>
+                      </div>
+                      <div class="program-content">
+                          <h3 class="program-title">{% trans "Средняя школа" %}</h3>
+                          <p class="program-grade">{% trans "(5-8 классы)" %}</p>
+                          <p class="program-description">
+                              {% trans "Углубленное изучение предметов и развитие критического мышления." %}
+                          </p>
+                      </div>
+                  </div>
+
+                  <div class="program-card">
+                      <div class="program-image high">
+                          <div><img src="{% static 'img/Frame 2.png' %}" alt=""></div>
+                      </div>
+                      <div class="program-content">
+                          <h3 class="program-title">{% trans "Старшая школа" %}</h3>
+                          <p class="program-grade">{% trans "(9-11 классы)" %}</p>
+                          <p class="program-description">
+                              {% trans "Подготовка к выпускным экзаменам и поступлению в вузы." %}
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+
+
+  <!-- Ваша секция testimonials в index.html -->
+  <section class="testimonials" id="testimonials">
+    <div class="container">
+      <h2 class="h2">{% trans "Что говорят наши ученики и родители" %}</h2>
+
+      <div class="testimonials__grid">
+        {% for review in reviews %}
+          <div class="card">
+            <div class="card__quote">“</div>
+            <p class="card__text">{{ review.comment }}</p>
+            <div class="card__footer">
+              {% if review.user.avatar %}
+                <img src="{{ review.user.avatar.url }}" class="card__avatar">
+              {% else %}
+                <div class="card__avatar avatar--placeholder"></div>
+              {% endif %}
+              <div class="card__info">
+                <div class="card__name">{{ review.user.get_full_name|default:review.user.username }}</div>
+                <div class="card__stars">
+                  {% for _ in review.stars_range %}
+                    <span class="star">★</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      </div>
+
+      <button id="js-leave-review" class="btn btn-secondary"
+              data-auth="{{ user.is_authenticated|yesno:'true,false' }}">
+        {% trans "Оставить отзыв" %}
+      </button>
+
+      <form id="js-review-form" action="{% url 'add_review' %}" method="post"
+            class="review-form">
+        {% csrf_token %}
+        <div class="form-group">
+          <textarea name="comment" rows="4" placeholder="Ваш отзыв…" required></textarea>
+        </div>
+
+        <div class="form-group rating-group">
+          <label for="rating">{% trans "Оценка:" %}</label>
+          <span id="rating-value">5</span>
+          <input type="range" id="rating" name="rating" min="1" max="5" value="5">
+        </div>
+
+        <button type="submit" class="btn btn--primary">{% trans "Отправить" %}</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <section class="sat">
+      <div class="father">
+      <div class="satdiv">
+          <h1>SAT</h1>
+      <p>  
+        {% blocktrans trimmed %}
+  Международный экзамен по математике, чтению и письму,<br>
+  используемый при поступлении в университеты США.
+  {% endblocktrans %}
+  </p>
+          <p>
+                {% blocktrans trimmed %}
+  Подготовка к SAT формирует критическое мышление, аналитические<br>
+  навыки и уверенное владение английским языком в академическом контексте.
+  {% endblocktrans %}
+            </p>
+      </div>
+
+
+      <div class="ielts">
+          <h1>IELTS</h1>
+          <p>{% trans "Международная система оценки владения английским для учёбы, работы и миграции" %}</p>
+          <p>{% trans "Признаётся более чем 11 500 организациями в 140 странах" %}</p>
+          <p>
+  {% blocktrans trimmed %}
+  Оценивает четыре навыка: Listening, Reading, Writing и Speaking —<br>
+  актуально для поступления в англоязычные университеты.
+  {% endblocktrans %}
+            
+            </p>
+
+      </div>
+
+      <div class="results">
+          <h1>{% trans "Результаты целевой подготовки" %}</h1>
+          <p>{% trans "Средний SAT Score наших студентов превышает 1400." %}</p>
+          <p>{% trans "IELTS—баллы от 7.0 и выше, что соответствует уровню C1 (продвинутый пользователь)." %}</p>
+          <p>{% trans "Более 50 000 студентов по всей стране успешно сдают IELTS в 2024г. — рост в 5 раз по сравнению с 2020 г." %}</p>
+      </div>
+
+      </div>
+
+  </section>
+
+
+  <section class="faq">
+    <h2 class="faq-title">{% trans "Ответы на популярные вопросы" %}</h2>
+
+    <div class="faq-item">
+      <button class="faq-question active">{% trans "Какие языки преподаются?" %}</button>
+      <div class="faq-answer open">
+        <p>{% trans "Английский, узбекский, русский, китайский" %}</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">{% trans "Есть ли подготовка к международным экзаменам?" %}</button>
+      <div class="faq-answer">
+        <p>{% trans "Да, школа Target готовит к SAT и IELTS с высокими результатами." %}</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question">{% trans "Как записаться на экскурсию?" %}</button>
+      <div class="faq-answer">
+        <a href="#contact-section">
+          {% trans "кликните здесь, чтобы оставить заявку на экскурсию" %}
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact-section" id="contact-section">
+    <div class="container">
+      <h2 class="section-title">{% trans "Остались вопросы?" %}</h2>
+      <p class="section-subtitle">{% trans "Оставьте свой номер телефона и мы ответим на все интересующие вас вопросы" %}</p>
+
+      <div class="form-wrapper">
+        <div class="form-box">
+          <input type="text" id="nameInput" placeholder="{% trans 'Ваше Ф.И.О' %}">
+          <input type="text" id="phoneInput" placeholder="+998">
+          <button onclick="submitContact()" class="submit-btn">{% trans "Записаться на консультацию" %}</button>
+          <p id="success-message" style="display:none; color:green; margin-top:10px;">{% trans "Отправлено! Мы скоро свяжемся с вами." %}</p>
+        </div>
+        <div class="image-box">
+          <img src="{% static 'img/operator.png' %}" alt="Оператор">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <!-- Лого и описание -->
+        <div class="footer-col logo-col">
+          <img src="{% static './img/Frame 2.png' %}" alt="Target International School" class="footer-logo">
+          <p>Target International School —<br>{% trans "школа будущих лидеров в бизнесе и IT" %}</p>
+          <div class="footer-socials">
+            <a href="#"><img src="{% static 'img/Facebook.png' %}" alt="Facebook"></a>
+            
+            <a href="#"><img src="{% static 'img/Instagram.png' %}" alt="Instagram"></a>
+            <a href="#"><img src="{% static 'img/YouTube.png' %}" alt="YouTube"></a>
+          </div>
+        </div>
+
+        <!-- Разделы -->
+        <div class="footer-col">
+          <h4>{% trans "Разделы" %}</h4>
+          <ul>
+            <li><a href="{% url 'home' %}">{% trans "Главная" %}</a></li>
+            <li><a href="#why-choose">{% trans "О школе" %}</a></li>
+            <li><a href="#testimonials">{% trans "Отзывы" %}</a></li>
+            <li><a href="#contact-section">{% trans "Контакты" %}</a></li>
+          </ul>
+        </div>
+
+        <!-- Адреса -->
+        <div class="footer-col">
+          <h4>{% trans "Адреса" %}</h4>
+          <ul>
+            <li>Филиал Истрохат</li>
+            <li>Филиал Тинчлик</li>
+            <li>Филиал Сергели</li>
+            <li>Филиал Олмазор</li>
+            <li>Филиал Юнусобод</li>
+          </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div class="footer-col">
+          <h4>{% trans "Контакты" %}</h4>
+          <ul class="footer-contacts">
+            <li>
+              📞 Call-center:<br>
+              <a href="tel:+998712000737">71 200 07 37</a>
+            </li>
+            <li>
+              📧 E-mail:<br>
+              <a href="mailto:info@target.uz">info@target.uz</a>
+            </li>
+            <li>
+              🏢 Адрес:<br>
+              <a href="{% url 'map' %}">Шокирарык, 85  Istirokhat Street 258, Tashkent</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+
+  <script>
+    function submitContact() {
+      const name = document.getElementById('nameInput').value;
+      const phone = document.getElementById('phoneInput').value;
+
+      fetch("{% url 'save_contact' %}", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': '{{ csrf_token }}'
+        },
+        body: JSON.stringify({ name, phone })
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('success-message').style.display = 'block';
+          document.getElementById('nameInput').value = '';
+          document.getElementById('phoneInput').value = '';
+        } else {
+          alert('Ошибка отправки');
+        }
+      });
+    }
+  </script>
+
+
+  <script>
+    // Показывать форму и проверять авторизацию
+    const leaveBtn    = document.getElementById('js-leave-review');
+    const reviewForm  = document.getElementById('js-review-form');
+    const isAuth      = leaveBtn.dataset.auth === 'true';
+
+    leaveBtn.addEventListener('click', () => {
+      if (!isAuth) {
+        return window.location.href = "{% url 'register' %}";
+      }
+      reviewForm.classList.toggle('visible');
+    });
+
+    // Обновление цифры рейтинга
+    const ratingInput = document.getElementById('rating');
+    const ratingValue = document.getElementById('rating-value');
+    ratingValue.textContent = ratingInput.value;
+    ratingInput.addEventListener('input', () => {
+      ratingValue.textContent = ratingInput.value;
+    });
+
+
+  document.querySelectorAll(".faq-question").forEach(button => {
+    button.addEventListener("click", () => {
+      const currentlyActive = document.querySelector(".faq-question.active");
+      if (currentlyActive && currentlyActive !== button) {
+        currentlyActive.classList.remove("active");
+        currentlyActive.nextElementSibling.classList.remove("open");
+      }
+
+      button.classList.toggle("active");
+      button.nextElementSibling.classList.toggle("open");
+    });
+  });
+
+
+  </script>
+
+  <script>
+    document.getElementById('language-select').addEventListener('change', function() {
+      this.form.submit();
+    });
+  </script>
+
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+      <script src="{% static 'script.js' %}"></script>
+  </body>
+  </html>

@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Отзывы</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <!-- Подключаем FontAwesome для иконок -->
+  <script src="https://kit.fontawesome.com/your-kit-id.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+
+  <main class="testimonials-page">
+    <div class="container">
+      <h2>Отзывы</h2>
+
+      <div class="testimonials__grid">
+        {% for review in reviews %}
+          <div class="card">
+            <div class="card__quote"><i class="fa fa-quote-left"></i></div>
+            <p class="card__text">{{ review.comment }}</p>
+            <div class="card__footer">
+              {% if review.user.avatar %}
+                <img src="{{ review.user.avatar.url }}" class="card__avatar">
+              {% else %}
+                <i class="fa fa-user-circle fa-2x card__avatar--placeholder"></i>
+              {% endif %}
+              <div class="card__info">
+                <div class="card__name">{{ review.user.get_full_name|default:review.user.username }}</div>
+                <div class="card__stars">
+                  {% for star in "★"|slice:":review.rating"|make_list %}
+                    <span class="star">{{ star }}</span>
+                  {% endfor %}
+                </div>
+              </div>
+            </div>
+          </div>
+        {% empty %}
+          <p>Пока нет ни одного отзыва.</p>
+        {% endfor %}
+      </div>
+
+ <button
+  id="js-leave-review"
+  data-authenticated="{{ user.is_authenticated|yesno:'true,false' }}"
+  class="btn btn--secondary"
+>
+  Оставить отзыв
+</button>
+
+
+      <form id="js-review-form" method="post" action="{% url 'add_review' %}"
+            class="review-form">
+        {% csrf_token %}
+        <div class="form-group">
+          <label for="comment">Ваш отзыв</label>
+          <textarea id="comment" name="comment" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="rating">Оценка: <span id="rating-value">5</span></label>
+          <input type="range" id="rating" name="rating" min="1" max="5" value="5">
+        </div>
+        <button type="submit" class="btn btn--primary">Отправить</button>
+      </form>
+    </div>
+  </main>
+
+  <script>
+    const leaveBtn   = document.getElementById('js-leave-review');
+    const reviewForm = document.getElementById('js-review-form');
+    // true/false строка
+    const isAuth     = leaveBtn.dataset.authenticated === 'true';
+
+    leaveBtn.addEventListener('click', () => {
+      if (!isAuth) {
+        window.location.href = "{% url 'register' %}";
+        return;
+      }
+      reviewForm.classList.toggle('visible');
+    });
+
+    // Обновляем параграф с рейтингом
+    const ratingInput = document.getElementById('rating');
+    const ratingValue = document.getElementById('rating-value');
+    ratingInput.addEventListener('input', () => {
+      ratingValue.textContent = ratingInput.value;
+    });
+  </script>
+</body>
+</html>
