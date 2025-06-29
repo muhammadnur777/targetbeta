@@ -47,7 +47,7 @@ a {
 .logo img {
     height: 40px;
 }
-
+/* 
 .nav {
     display: flex;
     gap: 30px;
@@ -58,7 +58,27 @@ a {
     font-weight: 500;
     color: rgba(176, 176, 176, 1);
     transition: color 0.3s ease;
+} */
+
+.nav {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;       /* пункты могут переноситься на новую строку */
+  align-items: center;
 }
+
+.nav-link {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(176, 176, 176, 1);
+  transition: color 0.3s ease;
+
+  white-space: normal;    /* разрешаем перенос строк внутри пункта */
+  word-wrap: break-word;  /* длинные слова будут переноситься на следующую строку */
+  /* убрали overflow, text-overflow и max-width, чтобы текст целиком отображался */
+}
+
+
 
 .nav-link:hover {
     color: #4a90e2; /* Синий цвет при наведении */

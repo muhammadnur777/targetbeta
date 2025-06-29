@@ -131,6 +131,7 @@ from django.utils.translation import gettext_lazy as _
 LANGUAGES = [
     ('ru', _('Русский')),
     ('en', _('English')),
+    ('uz', _('O‘zbekcha')),
     # другие, если нужно
 ]
 

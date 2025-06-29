@@ -1,0 +1,326 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-28 18:17+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\target\settings.py:132
+msgid "Русский"
+msgstr "Rus tili"
+
+#: .\target\settings.py:133
+msgid "English"
+msgstr "Inglis tili"
+
+#: .\target\settings.py:134
+msgid "O‘zbekcha"
+msgstr "O‘zbekcha"
+
+#: .\templates\index.html:37 .\templates\index.html:413
+#: .\templates\index.html:37 .\templates\index.html:414
+msgid "Главная"
+msgstr "Bosh sahifa"
+
+#: .\templates\index.html:38 .\templates\index.html:415
+msgid "О школе"
+msgstr "Maktab haqida"
+
+#: .\templates\index.html:39 .\templates\index.html:416
+msgid "Отзывы"
+msgstr "Fikrlar"
+
+#: .\templates\index.html:40 .\templates\index.html:434
+msgid "Контакты"
+msgstr "Kontaktlar"
+
+#: .\templates\index.html:84
+msgid "Target International School – школа будущих лидеров в бизнесе и IT"
+msgstr "Target International School – biznes va IT sohasida kelajak liderlari maktabi"
+
+#: .\templates\index.html:86
+msgid ""
+"Международное образование с акцентом на английский язык, предпринимательство "
+"и современные технологии."
+msgstr ""
+"Xalqaro taʼlim, ingliz tili, tadbirkorlik va zamonaviy texnologiyalarga "
+"yoʻnaltirilgan."
+
+#: .\templates\index.html:90 .\templates\index.html:185
+msgid "Получить консультацию"
+msgstr "Maslahat oling"
+
+#: .\templates\index.html:105
+msgid "лет работы"
+msgstr "ish yillari"
+
+#: .\templates\index.html:109
+msgid "учеников"
+msgstr "oʻquvchilar"
+
+#: .\templates\index.html:113
+msgid "поступают в вузы за рубежом"
+msgstr "chet el universitetlariga qabul qilinadi"
+
+#: .\templates\index.html:117
+msgid "филиала"
+msgstr "filiallari"
+
+#: .\templates\index.html:128
+msgid "Почему выбирают"
+msgstr "Nima uchun bizni tanlaydilar"
+
+#: .\templates\index.html:133
+msgid "Международная программа обучения"
+msgstr "Xalqaro o‘quv dasturi"
+
+#: .\templates\index.html:134
+msgid "Интеграция лучших мировых образовательных стандартов."
+msgstr "Jahonning eng yaxshi taʼlim standartlarini integratsiya qilish."
+
+#: .\templates\index.html:139
+msgid "Углублённое изучение английского языка"
+msgstr "Ingliz tilini chuqur o‘rganish"
+
+#: .\templates\index.html:140
+msgid "Подготовка к IELTS и SAT и другим международным экзаменам."
+msgstr "IELTS, SAT va boshqa xalqaro imtihonlarga tayyorgarlik."
+
+#: .\templates\index.html:144
+msgid "Поддержка при поступлении в университеты"
+msgstr "Universitetga qabul bo‘yicha qo‘llab‑quvvatlash"
+
+#: .\templates\index.html:145
+msgid "Консультации и помощь в выборе вуза и подготовки документов."
+msgstr "Universitet tanlash va hujjatlarni tayyorlash bo‘yicha maslahat va yordam."
+
+#: .\templates\index.html:150
+msgid "Индивидуальный подход"
+msgstr "Individual yondashuv"
+
+#: .\templates\index.html:151
+msgid "Малые классы и персонализированные планы обучения."
+msgstr "Kam sinflar va shaxsiy o‘quv rejalari."
+
+#: .\templates\index.html:155
+msgid "Современная инфраструктура"
+msgstr "Zamonaviy infratuzilma"
+
+#: .\templates\index.html:156
+msgid "Оснащённые классы, лаборатории и зоны для отдыха."
+msgstr "Jihozlangan sinflar, laboratoriyalar va dam olish zonalari."
+
+#: .\templates\index.html:160
+msgid "Уроки по бизнесу и IT"
+msgstr "Biznes va IT darslari"
+
+#: .\templates\index.html:161
+msgid "Развитие предпринимательских навыков и цифровой грамотности."
+msgstr "Tadbirkorlik ko‘nikmalari va raqamli savodxonlikni rivojlantirish."
+
+#: .\templates\index.html:172
+msgid "Образование, которое открывает двери<br> в международное будущее"
+msgstr "Taʼlim, xalqaro kelajakka eshiklar ochadigan<br> darslar"
+
+#: .\templates\index.html:178
+msgid ""
+" С 2015 года Target International School предоставляет качественное "
+"образование, \n"
+"                  сочетая академические знания с практическими навыками в "
+"области бизнеса и \n"
+"                  информационных технологий. Наши выпускники успешно "
+"поступают в ведущие \n"
+"                  университеты и строят карьеру в международных компаниях.  "
+msgstr ""
+"2015 yildan beri Target International School yuqori sifatli taʼlim "
+"taqdim etadi,\n"
+"                  akademik bilimlarni biznes va axborot texnologiyalari "
+"sohasidagi amaliy ko‘nikmalar bilan birlashtiradi.\n"
+"                  Bitiruvchilarimiz yetakchi universitetlarga qabul qilinib, "
+"xalqaro kompaniyalarda faoliyat yuritmoqdalar."
+
+#: .\templates\index.html:196
+msgid ""
+"Программы обучения<br>\n"
+"                  для всех возрастов  "
+msgstr ""
+"O‘quv dasturlari<br>\n                  har qanday yosh uchun"
+
+#: .\templates\index.html:206
+msgid "Начальная школа"
+msgstr "Boshlang‘ich maktab"
+
+#: .\templates\index.html:207
+msgid "(1-4 классы)"
+msgstr "(1–4 sinflar)"
+
+#: .\templates\index.html:209
+msgid "Формирование базовых навыков и интереса к обучению."
+msgstr "Asosiy ko‘nikmalarni shakllantirish va taʼlimga qiziqishni oshirish."
+
+#: .\templates\index.html:219
+msgid "Средняя школа"
+msgstr "O‘rta maktab"
+
+#: .\templates\index.html:220
+msgid "(5-8 классы)"
+msgstr "(5–8 sinflar)"
+
+#: .\templates\index.html:222
+msgid "Углубленное изучение предметов и развитие критического мышления."
+msgstr "Fanlarni chuqur o‘rganish va tanqidiy fikrlashni rivojlantirish."
+
+#: .\templates\index.html:232
+msgid "Старшая школа"
+msgstr "Oliy maktab"
+
+#: .\templates\index.html:233
+msgid "(9-11 классы)"
+msgstr "(9–11 sinflar)"
+
+#: .\templates\index.html:235
+msgid "Подготовка к выпускным экзаменам и поступлению в вузы."
+msgstr "Yakuniy imtihonlar va universitetga kirishga tayyorgarlik."
+
+#: .\templates\index.html:248
+msgid "Что говорят наши ученики и родители"
+msgstr "O‘quvchilarimiz va ota‑onalarimiz nimalar deydi"
+
+#: .\templates\index.html:276
+msgid "Оставить отзыв"
+msgstr "Fikr bildirish"
+
+#: .\templates\index.html:287
+msgid "Оценка:"
+msgstr "Baholash:"
+
+#: .\templates\index.html:292
+msgid "Отправить"
+msgstr "Yuborish"
+
+#: .\templates\index.html:304
+msgid ""
+"Международный экзамен по математике, чтению и письму,<br> используемый при "
+"поступлении в университеты США."
+msgstr ""
+"Matematika, o‘qish va yozuv bo‘yicha xalqaro imtihon,<br> AQSH universitetlariga qabul qilinishda qo‘llanadi."
+
+#: .\templates\index.html:310
+msgid ""
+"Подготовка к SAT формирует критическое мышление, аналитические<br> навыки и "
+"уверенное владение английским языком в академическом контексте."
+msgstr ""
+"SAT tayyorgarligi tanqidiy fikrlash, analitik<br> ko‘nikmalar va akademik kontekstda ingliz tilini ishonchli egallashni shakllantiradi."
+
+#: .\templates\index.html:320
+msgid ""
+"Международная система оценки владения английским для учёбы, работы и миграции"
+msgstr ""
+"O‘qish, ish va migratsiya uchun ingliz tilini baholashning xalqaro tizimi"
+
+#: .\templates\index.html:321
+msgid "Признаётся более чем 11 500 организациями в 140 странах"
+msgstr "140 ta davlatda 11 500 dan ortiq tashkilot tomonidan tan olingan"
+
+#: .\templates\index.html:323
+msgid ""
+"Оценивает четыре навыка: Listening, Reading, Writing и Speaking —<br> "
+"актуально для поступления в англоязычные университеты."
+msgstr ""
+"To‘rt ko‘nikma — Listening, Reading, Writing va Speaking —<br> ingliz tilidagi universitetlarga qabul uchun muhim."
+
+#: .\templates\index.html:333
+msgid "Результаты целевой подготовки"
+msgstr "Maqsadli tayyorgarlik natijalari"
+
+#: .\templates\index.html:334
+msgid "Средний SAT Score наших студентов превышает 1400."
+msgstr "O‘quvchilarimizning o‘rtacha SAT balli 1400 dan yuqori."
+
+#: .\templates\index.html:335
+msgid ""
+"IELTS—баллы от 7.0 и выше, что соответствует уровню C1 (продвинутый "
+"пользователь)."
+msgstr ""
+"IELTS—7.0 va undan yuqori ballar, bu C1 (oldinda foydalanuvchi) darajasiga to‘g‘ri keladi."
+
+#: .\templates\index.html:336
+msgid ""
+"Более 50 000 студентов по всей стране успешно сдают IELTS в 2024г. — рост в "
+"5 раз по сравнению с 2020 г."
+msgstr ""
+"2024 yilda butun mamlakat bo‘yicha 50 000 dan ortiq talaba muvaffaqiyatli IELTS topshirdi — 2020 yilga nisbatan 5 barobar o‘sish."
+
+#: .\templates\index.html:345
+msgid "Ответы на популярные вопросы"
+msgstr "Tez‑tez so‘raladigan savollarga javoblar"
+
+#: .\templates\index.html:348
+msgid "Какие языки преподаются?"
+msgstr "Qaysi tillar o‘tiladi?"
+
+#: .\templates\index.html:350
+msgid "Английский, узбекский, русский, китайский"
+msgstr "Ingliz, o‘zbek, rus, xitoy"
+
+#: .\templates\index.html:355
+msgid "Есть ли подготовка к международным экзаменам?"
+msgstr "Xalqaro imtihonlarga tayyorgarlik bormi?"
+
+#: .\templates\index.html:357
+msgid "Да, школа Target готовит к SAT и IELTS с высокими результатами."
+msgstr "Ha, Target maktabi SAT va IELTS ga yuqori natijalar bilan tayyorlaydi."
+
+#: .\templates\index.html:362
+msgid "Как записаться на экскурсию?"
+msgstr "Ekskursiyaga qanday ro‘yxatdan o‘tish mumkin?"
+
+#: .\templates\index.html:365
+msgid "кликните здесь, чтобы оставить заявку на экскурсию"
+msgstr "Ekskursiya uchun ariza qoldirish uchun shu yerga bosing"
+
+#: .\templates\index.html:374
+msgid "Остались вопросы?"
+msgstr "Savollaringiz qolgan bo‘lsa?"
+
+#: .\templates\index.html:375
+msgid ""
+"Оставьте свой номер телефона и мы ответим на все интересующие вас вопросы"
+msgstr ""
+"Telefon raqamingizni qoldiring, biz sizni qiziqtirgan barcha savollarga javob beramiz"
+
+#: .\templates\index.html:379
+msgid "Ваше Ф.И.О"
+msgstr "Ismingiz, familiyangiz va sharifingiz"
+
+#: .\templates\index.html:381
+msgid "Записаться на консультацию"
+msgstr "Maslahat uchun yoziling"
+
+#: .\templates\index.html:382
+msgid "Отправлено! Мы скоро свяжемся с вами."
+msgstr "Yuborildi! Tez orada bog‘lanamiz."
+
+#: .\templates\index.html:400
+msgid "школа будущих лидеров в бизнесе и IT"
+msgstr "biznes va IT kelajak liderlari maktabi"
+
+#: .\templates\index.html:411
+msgid "Разделы"
+msgstr "Bo‘limlar"
+
+#: .\templates\index.html:422
+msgid "Адреса"
+msgstr "Manzillar"
